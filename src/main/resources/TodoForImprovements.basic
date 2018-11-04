@@ -1,0 +1,20 @@
+dao.PersonCache class
+//Todo generics
+//Todo hashmap
+//Todo hashing - generally, collosion
+//Todo map operations
+//Todo map internal implementations
+//Todo throw custom exception when name not present
+//Todo thorws
+//Todo null checks, contains method
+
+dao.PostgresPersonDAO
+//Todo dependency injection - constructor
+// todo dont close connection if connected through singleton DB connection
+// todo always throw exception
+
+PersonApp class
+// todo : read from classpath
+
+service.service.PersonService class
+// todo : improve class name
