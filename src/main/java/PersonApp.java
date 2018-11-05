@@ -13,7 +13,8 @@ public class PersonApp {
     public static void main(String[] args) {
         Connection conn= SingletonDBConnection.getSingleInstance();
         PersonCache personCache =new PersonCache();
-        File file = new File("C:\\Users\\rohit_anand_\\Desktop\\text.txt");
+        ClassLoader classLoader = PersonApp.class.getClassLoader();
+        File file = new File(classLoader.getResource("text.txt").getFile());
         PersonService personService = new PersonService(new PostgresPersonDAO(conn),file, personCache);
         try {
             personService.readPersonsFromFile();
